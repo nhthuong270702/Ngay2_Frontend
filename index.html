@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid" style="padding: 0;">
+        <!-- header -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="row header">
+                    <div class="col-3 left">
+                        <a class="navbar-brand" href="">
+                            <b><span style="color: #ff4367ed;"><i class="fas fa-list-ul"></i>Classi</span><span
+                                    style="color: rgb(14, 119, 218);">Fied</span></b>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-9 right">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Disabled</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Disabled</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Disabled</a>
+                                </li>
+                                <li class="nav-item ml-4">
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- end header -->
+        <!-- banner -->
+        <div class="banner">
+            <div class="container">
+                <h2 style="margin-top: 50px;">Welcome to ClassiFied</h2>
+                <p style="text-align: justify;">Duyên lành đầu tiên của Ngài là có một kiếp Ngài thấy vị Tỳ-kheo tu Hạnh
+                    Đầu Đà trong rừng, Ngài phát nguyện lấy “một
+                    tấm vải cũ” cúng dường cho vị đó.</p>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <div class="search">
+                    <div class="row mb-3" style="margin: 0; padding: 0;">
+                        <div class="col-md-3" style="width: 100%;">
+                            <div class="input-group mt-4">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Location...</option>
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">Đà Nẵng</option>
+                                    <option value="3">TP Hồ Chí Minh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="width: 100%;">
+                            <div class="input-group mt-4">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text">
+                                        <i class="fas fa-th-list"></i>
+                                    </label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Catelogy...</option>
+                                    <option value="1">Điện thoại</option>
+                                    <option value="2">Máy tính</option>
+                                    <option value="3">Đồng hồ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="width: 100%;">
+                            <div class="input-group mt-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                                        <i class="fab fa-acquisitions-incorporated"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Small"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Type Your Word">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-danger mt-4" style="width: 100%;">Search</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="keywords">
+                                <li>Trendings Keywords: </li>
+                                <li><b><a href="">Samsung</a></b></li>
+                                <li><b><a href="">Realme</a></b></li>
+                                <li><b><a href="">Readme</a></b></li>
+                                <li><b><a href="">Oppo</a></b></li>
+                                <li><b><a href="">Xiaomi</a></b></li>
+                                <li><b><a href="">Iphone</a></b></li>
+                                <li><b><a href="">VSmast</a></b></li>
+                                <li><b><a href="">Vivo</a></b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end banner -->
+        <!-- catelogy -->
+        <div class="catelogy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 style="float: left;">Popular Catelogies</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-danger" style="float: right;">Light</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list">
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-laptop-icon-png-image_1753317.jpg"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Laptop</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="https://png.pngtree.com/png-vector/20190115/ourlarge/pngtree-mobile-phone-icon--line-style-vector-illustration-png-image_314752.jpg"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Điện thoại</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Máy ảnh</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Tai nghe</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="https://png.pngtree.com/png-vector/20191026/ourlarge/pngtree-wristwatch-icon-png-image_1871547.jpg"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Đồng hồ</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <ul class="list">
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-laptop-icon-png-image_1753317.jpg"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Laptop</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="https://png.pngtree.com/png-vector/20190115/ourlarge/pngtree-mobile-phone-icon--line-style-vector-illustration-png-image_314752.jpg"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Điện thoại</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Máy ảnh</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Tai nghe</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img class="card-img-top cate"
+                                        src="https://png.pngtree.com/png-vector/20191026/ourlarge/pngtree-wristwatch-icon-png-image_1871547.jpg"
+                                        alt="">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">Đồng hồ</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end catelogy -->
+        <!-- why choose us -->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" style="text-align: justify; margin-top: 60px;">
+                        <h2>Why Choose Us</h2>
+                        <p>
+                            The media object helps build complex and repetitive components where some media is
+                            positioned alongside content that
+                            doesn’t wrap around said media. Plus, it does this with only two required classes thanks to
+                            flexbox.
+                        </p>
+                        <p>
+                            <i class="fas fa-check-square" style="color: blue;"></i> Setting the top, right, bottom
+                        </p>
+                        <p>
+                            <i class="fas fa-check-square" style="color: red;"></i> Setting the top, right, bottom
+                        </p>
+                        <p>
+                            <i class="fas fa-check-square" style="color: aqua;"></i> Setting the top, right, bottom
+                        </p>
+                        <button type="button" class="btn btn-danger" style="float: left;">Light</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://s3.cloud.cmctelecom.vn/tinhte1/2018/09/4420233_Cover_Loa.jpg" alt=""
+                            style="height: 400px; display: block; margin-right: 0;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end why choose us -->
+        <!-- The Location -->
+        <div class="catelogy mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 style="float: left;">Explore The Locations</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-danger" style="float: right; width: 200px;">View all
+                            Locations</button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card card-location" style="width: 100%;">
+                            <img class="card-img-top img-location"
+                                src="https://vcdn1-dulich.vnecdn.net/2021/03/27/Cau-vang-Da-Nang.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jka_VcjLyT9TZarAEG6uOg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text" style="color: blue;"><i class="fas fa-map-marker-alt"></i> Cầu Vàng
+                                    <br>
+                                </p><small>Đà Nẵng - Việt Nam</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-location" style="width: 100%;">
+                            <img class="card-img-top img-location"
+                                src="https://vcdn1-dulich.vnecdn.net/2021/03/27/Cau-vang-Da-Nang.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jka_VcjLyT9TZarAEG6uOg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text" style="color: blue;"><i class="fas fa-map-marker-alt"></i> Cầu Vàng
+                                    <br>
+                                </p><small>Đà Nẵng - Việt Nam</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-location" style="width: 100%;">
+                            <img class="card-img-top img-location"
+                                src="https://vcdn1-dulich.vnecdn.net/2021/03/27/Cau-vang-Da-Nang.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jka_VcjLyT9TZarAEG6uOg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text" style="color: blue;"><i class="fas fa-map-marker-alt"></i> Cầu Vàng
+                                    <br>
+                                </p><small>Đà Nẵng - Việt Nam</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end The Location -->
+        <!-- Recently -->
+        <div class="catelogy mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 style="float: left;">Recently Published Ads</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-danger" style="float: right; width: 200px;">View all
+                            Ads</button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <div class="card card-location" style="width: 100%;">
+                            <div class="card-body">
+                                <span>Ram & Laptop</span> <span style="float: right;"><i
+                                        class="far fa-heart"></i></span>
+                                <hr>
+                                <p class="card-text" style="color: blue;">8 GB DDR4Ram, 4th Gen</p>
+                                <small><i class="fas fa-location-arrow"></i> Đà Nẵng - Việt Nam</small>
+                                <br>
+                                <br>
+                                <span style="color: red; font-size: 20px; font-weight: bolder;">$299,00</span> <small
+                                    style="float: right; margin-top: 7px;"><i>25 Jan, 2023</i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-location" style="width: 100%;">
+                            <div class="card-body">
+                                <span>Ram & Laptop</span> <span style="float: right;"><i
+                                        class="far fa-heart"></i></span>
+                                <hr style="color: red;">
+                                <p class="card-text" style="color: blue;">8 GB DDR4Ram, 4th Gen</p>
+                                <small><i class="fas fa-location-arrow"></i> Đà Nẵng - Việt Nam</small>
+                                <br>
+                                <br>
+                                <span style="color: red; font-size: 20px; font-weight: bolder;">$299,00</span> <small
+                                    style="float: right; margin-top: 7px;"><i>25 Jan, 2023</i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-location" style="width: 100%;">
+                            <div class="card-body">
+                                <span>Ram & Laptop</span> <span style="float: right;"><i
+                                        class="far fa-heart"></i></span>
+                                <hr>
+                                <p class="card-text" style="color: blue;">8 GB DDR4Ram, 4th Gen</p>
+                                <small><i class="fas fa-location-arrow"></i> Đà Nẵng - Việt Nam</small>
+                                <br>
+                                <br>
+                                <span style="color: red; font-size: 20px; font-weight: bolder;">$299,00</span> <small
+                                    style="float: right; margin-top: 7px;"><i>25 Jan, 2023</i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-location" style="width: 100%;">
+                            <div class="card-body">
+                                <span>Ram & Laptop</span> <span style="float: right;"><i
+                                        class="far fa-heart"></i></span>
+                                <hr>
+                                <p class="card-text" style="color: blue;">8 GB DDR4Ram, 4th Gen</p>
+                                <small><i class="fas fa-location-arrow"></i> Đà Nẵng - Việt Nam</small>
+                                <br>
+                                <br>
+                                <span style="color: red; font-size: 20px; font-weight: bolder;">$299,00</span> <small
+                                    style="float: right; margin-top: 7px;"><i>25 Jan, 2023</i></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Recently -->
+        <!-- ClassiFied Here For You -->
+        <div class="catelogy mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="text-align: center;">Explore The Locations</h2>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card card-location" style="width: 100%;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <i class="fab fa-sellcast fa-4x" style="color: red;"></i>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h4>Sell Your Item Safely</h4>
+                                        <p>Plus, it does this with only two required classes thanks to flexbox.</p>
+                                        <a href="">
+                                            <p>Read More <i class="fas fa-chevron-right"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-location" style="width: 100%;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <i class="fab fa-sellcast fa-4x" style="color: red;"></i>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h4>Sell Your Item Safely</h4>
+                                        <p>Plus, it does this with only two required classes thanks to flexbox.</p>
+                                        <a href="">
+                                            <p>Read More <i class="fas fa-chevron-right"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-location" style="width: 100%;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <i class="fab fa-sellcast fa-4x" style="color: red;"></i>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h4>Sell Your Item Safely</h4>
+                                        <p>Plus, it does this with only two required classes thanks to flexbox.</p>
+                                        <a href="">
+                                            <p>Read More <i class="fas fa-chevron-right"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ClassiFIed here For You -->
+        <!-- footer -->
+        <footer>
+
+        </footer>
+        <!-- end footer -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
