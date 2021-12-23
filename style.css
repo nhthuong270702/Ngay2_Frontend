@@ -1,9 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+html,
 body {
   background-color: #f2f3f7;
 }
@@ -37,7 +36,7 @@ body {
 /* banner 1 */
 .banner-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("https://thuvien.hocviennhiepanh.com/wp-content/uploads/man-checking-his-iphone.jpg");
+    url("https://anhdephd.com/wp-content/uploads/2018/02/hinh-anh-dep-wallpaper.jpg");
   width: 100%;
   float: left;
   background-repeat: no-repeat;
@@ -213,7 +212,6 @@ hr {
   width: 100%;
   float: left;
   margin-top: 10px;
-  position: relative;
   margin-bottom: 50px;
 }
 .content-4 {
@@ -241,8 +239,8 @@ hr {
   background-color: #453be4;
   height: 60px;
   line-height: 60px;
+  width: 100%;
 }
-
 .img {
   list-style: none;
 }
@@ -258,7 +256,7 @@ hr {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
   h1 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
   }
   .btn-header {
@@ -267,9 +265,10 @@ hr {
   /* banner-1 */
   .banner-1 {
     height: 750px;
+    width: 100%;
   }
   .search {
-    height: 350px;
+    height: 380px;
   }
   .banner-1 .text-title {
     margin-top: 10px;
@@ -296,6 +295,7 @@ hr {
   }
   .banner-2 {
     height: 750px;
+    width: 100%;
   }
   .banner-2 .img {
     height: 300px;
@@ -353,30 +353,38 @@ hr {
   }
   /* a plan */
   .plan .title {
-    font-size: 14px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: -20px;
   }
+  .plan {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .plan .center {
+    margin-top: 30px;
+  }
   .plan p {
-    font-size: 12px;
-    padding: 0px;
+    font-size: 16px;
+    padding: 20px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     max-width: 100%;
-    line-height: 35px;
+    line-height: 40px;
   }
   .plan h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 34px;
+    margin-bottom: 30px;
   }
   .plan .icon {
-    font-size: 40px;
+    font-size: 50px;
   }
   .plan .btn {
-    width: 50px;
-    font-size: 12px;
+    width: 150px;
+    font-size: 14px;
   }
   /* end a plan */
 
@@ -423,6 +431,7 @@ hr {
   /* banner-1 */
   .banner-1 {
     height: 570px;
+    width: 100%;
   }
   .banner-1 .text-title {
     margin-top: 50px;
@@ -475,6 +484,7 @@ hr {
   /* banner-2 */
   .banner-2 {
     height: 500px;
+    width: 100%;
   }
   .banner-2 h2 {
     font-size: 20px;
@@ -522,12 +532,12 @@ hr {
   /* end Classified */
   /* a plan */
   .plan .title {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     margin-bottom: -20px;
   }
   .plan p {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0px;
     line-height: 40px;
   }
@@ -558,6 +568,7 @@ hr {
   }
   .banner-1 {
     height: 600px;
+    width: 100%;
   }
   .banner-1 .text-title {
     margin-top: 70px;
@@ -613,7 +624,7 @@ hr {
   }
   /* a plan */
   .plan .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: -20px;
   }
@@ -642,6 +653,7 @@ hr {
   }
   .banner-1 {
     height: 600px;
+    width: 100%;
   }
   .banner-1 .text-title {
     margin-top: 70px;
@@ -660,6 +672,7 @@ hr {
   }
   .keywords {
     padding: 0;
+    margin-top: 10px;
   }
   .keywords li {
     font-size: 16px;
@@ -681,7 +694,7 @@ hr {
   .banner-2 .img {
     height: 500px;
     margin-top: 0;
-    width: 740px;
+    width: 744px;
   }
   .banner-2 .title {
     font-size: 40px;
@@ -736,6 +749,7 @@ hr {
   }
   .banner-4 {
     height: 160px;
+    width: 100%;
   }
   .banner-4 h3 {
     font-size: 30px;
