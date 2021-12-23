@@ -1,10 +1,13 @@
-body {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+}
+body {
   background-color: #f2f3f7;
 }
+/* navbar */
 .left {
   float: left;
   width: 30%;
@@ -24,18 +27,25 @@ body {
   color: black;
   font-size: 17px;
 }
+.right .navbar-nav .nav-item a:hover {
+  color: #ff4367;
+  font-weight: bold;
+  text-decoration: overline;
+}
+/* end navbar */
+
+/* banner 1 */
 .banner-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url("https://thuvien.hocviennhiepanh.com/wp-content/uploads/man-checking-his-iphone.jpg");
-  height: 600px;
   width: 100%;
   float: left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.btn {
-  width: 100px;
+.btn-1 {
+  width: 110px;
   margin-right: 10px;
   margin-top: 10px;
 }
@@ -46,7 +56,6 @@ body {
   width: 100%;
   margin-top: 50px;
 }
-
 .keywords {
   list-style: none;
   color: white;
@@ -54,14 +63,15 @@ body {
 }
 .keywords li {
   float: left;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .keywords li a {
   color: white;
+  font-size: 16px;
 }
-
+/* end banner 1 */
+/* catelogy */
 .catelogy {
-  margin-top: 30px;
   float: left;
   width: 100%;
 }
@@ -73,7 +83,6 @@ body {
 .list li {
   float: left;
   margin: 0 10px;
-  width: 18%;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -85,7 +94,15 @@ body {
   margin-right: auto;
   margin-bottom: -20px;
 }
-
+#catelogy {
+  margin-top: 20px;
+}
+.catelogy .btn-popu {
+  float: right;
+  width: 160px;
+}
+/* end catelogy */
+/* banner 2 */
 .banner-2 {
   background-color: white;
   height: 550px;
@@ -93,38 +110,53 @@ body {
   float: left;
   margin-top: 10px;
 }
-
+.banner-2 .title {
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* end banner2 */
+/* location */
 .img-location {
   border-radius: 10px;
   height: 300px;
 }
 .card-location {
   border-radius: 10px;
+  width: 100%;
 }
-
+.card-location p {
+  color: #453be4;
+}
+.btn-location {
+  float: right;
+}
+/* end location */
+/* banner3 */
 .banner-3 {
   background-image: url("https://media.istockphoto.com/photos/female-hands-typing-on-laptop-student-workspace-banner-with-copy-picture-id1224536710?k=20&m=1224536710&s=170667a&w=0&h=YKTq4LA2K75tffgcj7w10irraEwWPH-DWFNl-UfwasA=");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 500px;
   width: 100%;
   float: left;
   margin-top: 10px;
   position: relative;
 }
+
 .text-3 {
   color: white;
   text-align: center;
   line-height: 30px;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 .content {
-  height: 100px;
+  height: 150px;
   width: 100%;
   background-color: #453be4;
-  margin-top: 300px;
+  margin-top: 350px;
 }
-
+/* end banner3 */
+/* recently */
 hr {
   color: #ff4367;
   background: #ff4367;
@@ -132,9 +164,15 @@ hr {
   height: 2px;
   margin: 10px 0 20px;
 }
+.btn-recen {
+  float: right;
+  width: 200px;
+  margin-top: 40px;
+}
+/* end recently */
 /* a plan */
 .center {
-  height: 600px;
+  height: 700px;
   width: 100%;
   background-color: #ff4367;
   border-radius: 10px;
@@ -147,11 +185,15 @@ hr {
 }
 .around {
   margin-top: 50px;
-  height: 500px;
+  height: 600px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
   line-height: 30px;
+}
+.around .title {
+  color: #ff4367;
+  font-size: 30px;
 }
 .around p {
   padding: 0 40px;
@@ -168,7 +210,6 @@ hr {
 
 .banner-4 {
   background-color: white;
-  height: 160px;
   width: 100%;
   float: left;
   margin-top: 10px;
@@ -212,4 +253,500 @@ hr {
 .img-footer {
   height: 20px;
   width: 40px;
+}
+/* ==========Responsive========== */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .btn-header {
+    float: right;
+  }
+  /* banner-1 */
+  .banner-1 {
+    height: 750px;
+  }
+  .search {
+    height: 350px;
+  }
+  .banner-1 .text-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .banner-1 .text-body {
+    text-align: justify;
+    font-size: 12px;
+  }
+  /* popular */
+  .catelogy .btn-popu {
+    margin-top: -50px;
+  }
+  .catelogy .list .card-text {
+    display: none;
+  }
+  #catelogy {
+    font-size: 20px;
+  }
+  .list li {
+    margin-right: 5px;
+    width: 17%;
+  }
+  .banner-2 {
+    height: 750px;
+  }
+  .banner-2 .img {
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  /* location */
+  .btn-location {
+    margin-top: -50px;
+    width: 150px;
+  }
+  /* banner-3 */
+  .banner-3 {
+    width: 100%;
+  }
+  .content {
+    height: 150px;
+  }
+  .banner-3 .fa-3x {
+    font-size: 30px;
+  }
+  .banner-3 .number {
+    font-size: 20px;
+  }
+  .text-3 p {
+    font-size: 14px;
+  }
+  .text-3 {
+    margin-top: 15px;
+  }
+  /* recently */
+  .btn-recen {
+    margin-top: -55px;
+    width: 150px;
+  }
+  .card-location {
+    margin-top: 10px;
+  }
+  .text .title {
+    font-size: 13px;
+  }
+  .recently .card {
+    margin-top: 10px;
+  }
+  /* classified */
+  .classified {
+    display: block;
+    text-align: center;
+  }
+  .classified .icon {
+    font-size: 30px;
+  }
+  .classified .card {
+    margin-top: 10px;
+  }
+  /* a plan */
+  .plan .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: -20px;
+  }
+  .plan p {
+    font-size: 12px;
+    padding: 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    line-height: 35px;
+  }
+  .plan h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .plan .icon {
+    font-size: 40px;
+  }
+  .plan .btn {
+    width: 50px;
+    font-size: 12px;
+  }
+  /* end a plan */
+
+  .banner-4 {
+    height: 300px;
+  }
+  .banner-4 h3 {
+    font-size: 20px;
+  }
+  .banner-4 .btn {
+    margin-top: 20px;
+  }
+
+  .footer-title h3 {
+    font-size: 14px;
+  }
+  .footer li {
+    font-size: 12px;
+  }
+  .img-footer {
+    display: none;
+  }
+  .footer-end {
+    font-size: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .banner-1 .text-title {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  .btn-header {
+    float: right;
+  }
+  #navbarNavDropdown {
+    float: left;
+  }
+  /* banner-1 */
+  .banner-1 {
+    height: 570px;
+  }
+  .banner-1 .text-title {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  .banner-1 .text-body {
+    font-size: 16px;
+  }
+  .btn-1 {
+    font-size: 16px;
+  }
+  .search {
+    height: 180px;
+    padding: 10px;
+  }
+  .search .input {
+    width: 100%;
+    padding-left: 0;
+  }
+  .keywords li {
+    font-size: 14px;
+  }
+  .keywords {
+    padding: 0;
+  }
+  /* end banner-1 */
+  /* catelogy */
+  .catelogy .text-title {
+    font-size: 10px;
+    width: 50%;
+  }
+  .catelogy .btn-cate {
+    font-size: 12px;
+    width: 120px;
+  }
+  #catelogy {
+    font-size: 35px;
+  }
+  .catelogy .btn-popu {
+    margin-top: 35px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .list li {
+    margin-right: 0;
+    width: 18%;
+  }
+  /* end catelogy */
+  /* banner-2 */
+  .banner-2 {
+    height: 500px;
+  }
+  .banner-2 h2 {
+    font-size: 20px;
+  }
+  .banner-2 .img {
+    height: 300px;
+    width: 100%;
+    margin-top: 110px;
+  }
+  /* end banner-2 */
+  .location .btn-location {
+    margin-top: -40px;
+  }
+  /* banner-3 */
+  .banner-3 .fa-3x {
+    font-size: 30px;
+  }
+  .banner-3 .number {
+    font-size: 30px;
+  }
+  .text-3 p {
+    font-size: 20px;
+  }
+  /* end banner-3 */
+  .banner-4 {
+    height: 180px;
+  }
+  /* Recently */
+  .text .title {
+    font-size: 13px;
+  }
+  /* end recently */
+  /* CLassiFied */
+  .classified .icon {
+    font-size: 40px;
+  }
+  .classified h4 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .classified p {
+    font-size: 12px;
+    color: black;
+  }
+  /* end Classified */
+  /* a plan */
+  .plan .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: -20px;
+  }
+  .plan p {
+    font-size: 14px;
+    padding: 0px;
+    line-height: 40px;
+  }
+  .plan h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .plan .icon {
+    font-size: 40px;
+  }
+  /* end a plan */
+  /* banner-4 */
+  .banner-4 h3 {
+    font-size: 25px;
+  }
+  /* end banner4 */
+  /* footer */
+  .footer-title h3 {
+    font-size: 20px;
+  }
+  /* end footer */
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 29px;
+    font-weight: bold;
+  }
+  .banner-1 {
+    height: 600px;
+  }
+  .banner-1 .text-title {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  .banner-1 .text-body {
+    font-size: 18px;
+  }
+  .search {
+    height: 180px;
+    padding: 10px;
+  }
+  .search .input {
+    width: 100%;
+    padding-left: 0;
+  }
+  .keywords {
+    padding: 0;
+  }
+  .keywords li {
+    font-size: 14px;
+  }
+  #catelogy {
+    font-size: 40px;
+  }
+  .catelogy .btn-popu {
+    margin-top: 40px;
+  }
+  .list li {
+    margin-right: 5px;
+    width: 18%;
+  }
+  .banner-3 .fa-3x {
+    font-size: 40px;
+  }
+  .banner-3 .number {
+    font-size: 40px;
+  }
+  .text-3 p {
+    font-size: 20px;
+  }
+  .text .title {
+    font-size: 16px;
+  }
+  .classified .fa-4x {
+    font-size: 50px;
+  }
+  .classified h4 {
+    font-size: 22px;
+  }
+  .classified p {
+    font-size: 16px;
+  }
+  /* a plan */
+  .plan .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: -20px;
+  }
+  .plan p {
+    font-size: 16px;
+    padding: 0px;
+    line-height: 40px;
+  }
+  .plan h3 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .plan .icon {
+    font-size: 45px;
+  }
+  /* end a plan */
+  .banner-4 {
+    height: 180px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .banner-1 {
+    height: 600px;
+  }
+  .banner-1 .text-title {
+    margin-top: 70px;
+    font-size: 40px;
+  }
+  .banner-1 .text-body {
+    font-size: 18px;
+  }
+  .search {
+    height: 160px;
+    padding: 10px;
+  }
+  .search .input {
+    width: 100%;
+    padding-left: 0;
+  }
+  .keywords {
+    padding: 0;
+  }
+  .keywords li {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  #catelogy {
+    font-size: 60px;
+  }
+  .catelogy .btn-popu {
+    margin-top: 40px;
+  }
+  .list li {
+    margin-right: 1px;
+    width: 19%;
+  }
+  .list .card {
+    margin-right: 15px;
+  }
+  .banner-2 .img {
+    height: 500px;
+    margin-top: 0;
+    width: 740px;
+  }
+  .banner-2 .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .banner-2 .fas {
+    font-size: 25px;
+  }
+  .btn-location {
+    margin-top: 40px;
+  }
+  .banner-3 .fa-3x {
+    font-size: 50px;
+  }
+  .text-3 p {
+    font-size: 24px;
+  }
+  .btn-recen {
+    margin-top: 30px;
+  }
+  /* a plan */
+  .plan .title {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: -30px;
+  }
+  .plan p {
+    font-size: 16px;
+    padding: 20px;
+    line-height: 40px;
+  }
+  .plan h3 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: -10px;
+  }
+  .plan .icon {
+    font-size: 45px;
+  }
+  /* end a plan */
+  .classified .fa-4x {
+    font-size: 60px;
+  }
+  .classified h4 {
+    font-size: 24px;
+  }
+  .classified p {
+    font-size: 16px;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+  .banner-4 {
+    height: 160px;
+  }
+  .banner-4 h3 {
+    font-size: 30px;
+  }
+  .banner-4 .input-group {
+    height: 50px;
+  }
+  .banner-4 .btn {
+    height: 50px;
+  }
+  .footer-title h3 {
+    font-size: 30px;
+  }
 }
