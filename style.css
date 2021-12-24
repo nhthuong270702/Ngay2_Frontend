@@ -443,6 +443,12 @@ hr {
   .btn-1 {
     font-size: 16px;
   }
+  .search .btn-sub {
+    width: 100%;
+  }
+  .search .sub {
+    padding: 0;
+  }
   .search {
     height: 180px;
     padding: 10px;
@@ -585,6 +591,12 @@ hr {
     width: 100%;
     padding-left: 0;
   }
+  .search .btn-sub {
+    width: 100%;
+  }
+  .search .sub {
+    padding: 0;
+  }
   .keywords {
     padding: 0;
   }
@@ -652,7 +664,7 @@ hr {
     font-weight: bold;
   }
   .banner-1 {
-    height: 600px;
+    height: 650px;
     width: 100%;
   }
   .banner-1 .text-title {
@@ -666,9 +678,14 @@ hr {
     height: 160px;
     padding: 10px;
   }
+  .search .btn-sub {
+    width: 100%;
+  }
+  .search .sub {
+    padding: 0;
+  }
   .search .input {
     width: 100%;
-    padding-left: 0;
   }
   .keywords {
     padding: 0;
@@ -732,7 +749,7 @@ hr {
     margin-top: -10px;
   }
   .plan .icon {
-    font-size: 45px;
+    font-size: 50px;
   }
   /* end a plan */
   .classified .fa-4x {
@@ -761,6 +778,6 @@ hr {
     height: 50px;
   }
   .footer-title h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
