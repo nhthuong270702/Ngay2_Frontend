@@ -256,7 +256,7 @@ hr {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
   h1 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
   }
   .btn-header {
@@ -271,13 +271,13 @@ hr {
     height: 380px;
   }
   .banner-1 .text-title {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px;
     font-weight: bold;
   }
   .banner-1 .text-body {
     text-align: justify;
-    font-size: 12px;
+    font-size: 16px;
   }
   /* popular */
   .catelogy .btn-popu {
@@ -287,15 +287,19 @@ hr {
     display: none;
   }
   #catelogy {
-    font-size: 20px;
+    font-size: 24px;
   }
   .list li {
-    margin-right: 5px;
-    width: 17%;
+    margin-right: 6px;
+    width: 15%;
   }
   .banner-2 {
     height: 750px;
     width: 100%;
+  }
+  .banner-2 .title {
+    font-size: 26px;
+    margin-top: 40px;
   }
   .banner-2 .img {
     height: 300px;
@@ -313,18 +317,20 @@ hr {
   }
   .content {
     height: 150px;
+    padding: 0 7px;
   }
   .banner-3 .fa-3x {
-    font-size: 30px;
+    font-size: 24px;
   }
   .banner-3 .number {
-    font-size: 20px;
+    font-size: 16px;
   }
   .text-3 p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .text-3 {
     margin-top: 15px;
+    line-height: 23px;
   }
   /* recently */
   .btn-recen {
@@ -335,7 +341,7 @@ hr {
     margin-top: 10px;
   }
   .text .title {
-    font-size: 13px;
+    font-size: 16px;
   }
   .recently .card {
     margin-top: 10px;
@@ -346,7 +352,7 @@ hr {
     text-align: center;
   }
   .classified .icon {
-    font-size: 30px;
+    font-size: 40px;
   }
   .classified .card {
     margin-top: 10px;
@@ -358,7 +364,7 @@ hr {
     margin-bottom: -20px;
   }
   .plan {
-    width: 80%;
+    width: 92%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -373,14 +379,17 @@ hr {
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     max-width: 100%;
-    line-height: 40px;
+    line-height: 30px;
   }
   .plan h3 {
     font-size: 34px;
     margin-bottom: 30px;
   }
+  .plan .title {
+    font-size: 26px;
+  }
   .plan .icon {
-    font-size: 50px;
+    font-size: 40px;
   }
   .plan .btn {
     width: 150px;
@@ -393,22 +402,21 @@ hr {
   }
   .banner-4 h3 {
     font-size: 20px;
+    text-align: center;
   }
   .banner-4 .btn {
     margin-top: 20px;
   }
 
   .footer-title h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
   .footer li {
-    font-size: 12px;
-  }
-  .img-footer {
-    display: none;
+    font-size: 16px;
   }
   .footer-end {
-    font-size: 10px;
+    font-size: 15px;
+    height: 150px;
   }
 }
 
@@ -520,7 +528,7 @@ hr {
   }
   /* Recently */
   .text .title {
-    font-size: 13px;
+    font-size: 14px;
   }
   /* end recently */
   /* CLassiFied */
@@ -563,6 +571,14 @@ hr {
   /* footer */
   .footer-title h3 {
     font-size: 20px;
+    height: 50px;
+  }
+  .footer li {
+    font-size: 16px;
+  }
+  .footer-end {
+    font-size: 15px;
+    height: 150px;
   }
   /* end footer */
 }
@@ -779,5 +795,8 @@ hr {
   }
   .footer-title h3 {
     font-size: 28px;
+  }
+  .footer-end {
+    height: 60px;
   }
 }
